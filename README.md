@@ -3,6 +3,27 @@
   <img width="200" src="https://media4.giphy.com/media/1jWAx072bAJwMebcl7/200w.gif?cid=82a1493bnsutnhqk7gyyjf1k0m8rbad3qp6t6gan3zf9vr6b&rid=200w.gif" alt="Material Bread logo">
 </p> 
 
+#Commands
+
+```
+mirror - Start Mirroring Direct Links,Torrents,Magnets.
+tarmirror - Mirrors Direct Links,Torrents,Magnets As Tar.
+unzipmirror - Extract Files.
+clone - Copy GDrive File/Folder To Ur GDrive.
+watch - Mirror YT-DLP Supported Links.
+tarwatch - Mirror Youtube Playlist Link As Tar
+cancel - Cancel A Task
+cancelall - Cancel All Tasks
+del - Delete file from Drive
+list - [query] Searches Files In G-Drive
+status - Get Mirror Status Message
+stats - Bot Usage Stats
+help - Get Detailed Help
+log - Bot Log [owner only]
+restart - To Restart The Bot
+count - Get Details About GDrive Folder/File
+```
+
 #Title: API Changed while searching https://t.me/SlamMirrorUpdates 07-09-2021 Last Updates.
 
 ## How to Add Torrent Search Extra Bot Addons https://github.com/SlamDevs/slam-mirrorbot/commit/d973ac2cc4e345ad89dff967b96e43659c00c2d1
