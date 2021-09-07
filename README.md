@@ -1,8 +1,7 @@
- <p align="center">
+ [![Slam](https://gitlab.awslink.in/api/logoposter.jpg)](https://youtu.be/Pk_TthHfLeE)
+<p align="center">
   <img width="200" src="https://media4.giphy.com/media/1jWAx072bAJwMebcl7/200w.gif?cid=82a1493bnsutnhqk7gyyjf1k0m8rbad3qp6t6gan3zf9vr6b&rid=200w.gif" alt="Material Bread logo">
 </p> 
-
-[![Slam](https://gitlab.awslink.in/api/logoposter.jpg)](https://youtu.be/Pk_TthHfLeE)
 
 #Title: API Changed while searching https://t.me/SlamMirrorUpdates 07-09-2021 Last Updates.
 
