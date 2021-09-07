@@ -7,7 +7,11 @@
 
 # This Is A Telegram Bot Written In Python For Mirroring Files On The Internet To Our Beloved Google Drive.
 </p>
-
+- Torrent search Supported:
+```
+nyaa.si, sukebei, 1337x, piratebay,
+tgx, yts, eztv, torlock, rarbg
+```
 Here Are Some Things To Get You Started.👇
 
 
