@@ -12,7 +12,7 @@ from bot.helper.telegram_helper.bot_commands import BotCommands
 from bot.helper.telegram_helper.message_utils import *
 from .helper.ext_utils.bot_utils import get_readable_file_size, get_readable_time
 from .helper.telegram_helper.filters import CustomFilters
-from .modules import authorize, list, cancel_mirror, mirror_status, mirror, clone, watch, delete, speedtest, count
+from .modules import authorize, list, cancel_mirror, mirror_status, mirror, clone, watch, delete, speedtest, count, torrent_search
 
 from pyrogram import idle
 from bot import app
@@ -100,8 +100,31 @@ def bot_help(update, context):
 
 /{BotCommands.SpeedCommand} : Check Internet Speed Of The Host
 
+/{BotCommands.TsHelp1Command}: Get help for Torrent search module
+
 '''
-    sendMessage(help_string, context.bot, update)
+
+    if CustomFilters.sudo_user(update) or CustomFilters.owner_filter(update):
+        sendMessage(help_string_adm, context.bot, update)
+    else:
+        sendMessage(help_string, context.bot, update)
+
+
+botcmds = [
+        (f'{BotCommands.HelpCommand}','★ Get Detailed Help ★'),
+        (f'{BotCommands.MirrorCommand}', '★ Start Mirroring and Seed ★'),
+        (f'{BotCommands.StatusCommand}','★ Get Mirror, Seed Status message ★'),
+        (f'{BotCommands.TarMirrorCommand}','★ Start mirroring, Seed and upload as .tar ★'),
+        (f'{BotCommands.UnzipMirrorCommand}','★ Extract files .zip, .tar .rar and more ★'),
+        (f'{BotCommands.CloneCommand}','★ Copy file/folder to Drive ★'),
+        (f'{BotCommands.WatchCommand}','★ Download Youtube-dl support link ★'),
+        (f'{BotCommands.TarWatchCommand}','★ Download Youtube playlist link as .tar ★'),
+        (f'{BotCommands.CancelAllCommand}','★ Cancel all tasks [OWNER ONLY] ★'),
+        (f'{BotCommands.ListCommand}','★ Searches files in Drive ★'),
+        (f'{BotCommands.StatsCommand}','★ Bot Usage Stats ★'),
+        (f'{BotCommands.TsHelpCommand}','★ help for Torrent search:  1337x, piratebay, tgx, yts, eztv, nyaa.si, sukebei, torlock, rarbg, ts ★')    
+
+    ]
 
 
 def main():
