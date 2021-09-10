@@ -17,7 +17,6 @@ from pyrogram import Client
 from telegraph import Telegraph
 from megasdkrestclient import MegaSdkRestClient, errors as mega_err
 
-
 import socket
 import faulthandler
 faulthandler.enable()
