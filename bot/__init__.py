@@ -15,7 +15,6 @@ import telegram.ext as tg
 from dotenv import load_dotenv
 from pyrogram import Client
 from telegraph import Telegraph
-from megasdkrestclient import MegaSdkRestClient, errors as mega_err
 
 import socket
 import faulthandler
