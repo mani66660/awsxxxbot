@@ -1,5 +1,5 @@
 # Base Image
-FROM ghcr.io/iamliquidx/mirrorx@sha256:96c42f38288d4211c4b3071816b9c2a3f11cf0a47983b47cc72c9281a1f11b55
+FROM ghcr.io/iamliquidx/mirrorx
 
 # Home Dir
 WORKDIR /app/
