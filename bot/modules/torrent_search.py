@@ -4,7 +4,7 @@ import html
 import asyncio
 import aiohttp
 import json
-import feedparser
+#import feedparser
 import requests
 import itertools
 
