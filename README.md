@@ -86,7 +86,24 @@ $ heroku git:remote -a awsmirrorzone0
 
 
 #Commands
-
+```
+helpx - Get Detailed Help
+seedx - Start Mirroring Direct Links,Torrents,Magnets.
+tarx - Mirrors Direct Links,Torrents,Magnets As Tar.
+unzipx - Extract Files.
+clonex - Copy GDrive File/Folder To Ur GDrive.
+watchx - Mirror YT-DLP Supported Links.
+tarwatchx - Mirror Youtube Playlist Link As Tar
+countx - Get Details About GDrive Folder/File
+cancelx - Cancel A Task
+cancelallx - Cancel All Tasks
+delx - Delete file from Drive
+search - [name] Searches Files In G-Drive
+statusx - Get Mirror Status Message
+stats - Bot Usage Stats
+restartx - To Restart The Bot
+tshelp - ★ 🧲 Torrent Search File Name ★
+```
 ```
 mirror - Start Mirroring Direct Links,Torrents,Magnets.
 tarmirror - Mirrors Direct Links,Torrents,Magnets As Tar.
