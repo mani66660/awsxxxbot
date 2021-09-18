@@ -303,15 +303,18 @@ RESULT_STR_ALL = (
     "👤 Seeders: {Seeders} | 🔄 Leechers: {Leechers}"
 )
 
+#TORRENT_API_URL = 'https://api.eunhamirror.repl.co/api'
+TORRENT_API_URL = 'https://api.linkstore.eu.org/api'
+
 torrents_dict = {
-    '1337x': {'source': "https://api.eunhamirror.repl.co/api/1337x/", 'result_str': RESULT_STR_1337},
-    'piratebay': {'source': "https://api.eunhamirror.repl.co/api/piratebay/", 'result_str': RESULT_STR_PIRATEBAY},
-    'tgx': {'source': "https://api.eunhamirror.repl.co/api/tgx/", 'result_str': RESULT_STR_TGX},
-    'yts': {'source': "https://api.eunhamirror.repl.co/api/yts/", 'result_str': RESULT_STR_YTS},
-    'eztv': {'source': "https://api.eunhamirror.repl.co/api/eztv/", 'result_str': RESULT_STR_EZTV},
-    'torlock': {'source': "https://api.eunhamirror.repl.co/api/torlock/", 'result_str': RESULT_STR_TORLOCK},
-    'rarbg': {'source': "https://api.eunhamirror.repl.co/api/rarbg/", 'result_str': RESULT_STR_RARBG},
-    'ts': {'source': "https://api.eunhamirror.repl.co/api/all/", 'result_str': RESULT_STR_ALL}
+    '1337x': {'source': f"{TORRENT_API_URL}/1337x/", 'result_str': RESULT_STR_1337},
+    'piratebay': {'source': f"{TORRENT_API_URL}/piratebay/", 'result_str': RESULT_STR_PIRATEBAY},
+    'tgx': {'source': f"{TORRENT_API_URL}/tgx/", 'result_str': RESULT_STR_TGX},
+    'yts': {'source': f"{TORRENT_API_URL}/yts/", 'result_str': RESULT_STR_YTS},
+    'eztv': {'source': f"{TORRENT_API_URL}/eztv/", 'result_str': RESULT_STR_EZTV},
+    'torlock': {'source': f"{TORRENT_API_URL}/torlock/", 'result_str': RESULT_STR_TORLOCK},
+    'rarbg': {'source': f"{TORRENT_API_URL}/rarbg/", 'result_str': RESULT_STR_RARBG},
+    'ts': {'source': f"{TORRENT_API_URL}/all/", 'result_str': RESULT_STR_ALL}
 }
 
 torrent_handlers = []
@@ -321,7 +324,7 @@ for command, value in torrents_dict.items():
 def searchhelp(update, context):
     help_string = '''
 <b>🧲 Torrent 🔍 Search 🚦\n</b>
-<b>✥═══ @awsmirrorzone ═══✥\n</b>
+<b>✥═══ @awsmirrorzone ═══✥</b>
 
 ★ /ts <i>[search name]</i>
 ★ /1337x <i>[search name]</i>
@@ -332,14 +335,14 @@ def searchhelp(update, context):
 ★ /rarbg <i>[search name]</i>
 ★ /yts <i>[search name]</i>
 
-<b>Torrent RSS Search</b>
+<b>🧲 Torrent RSS Search 🔍</b>
 
 ★ /nyaasi <i>[search name]</i>
 ★ /sukebei <i>[search name]</i>
 
 <b>Example :</b> <code>/nyaasi search name</code>
 
-<b>\n✥═══ @Mani5GRockers ═══✥</b>
+<b>✥═══ @Mani5GRockers ═══✥</b>
 '''
     sendMessage(help_string, context.bot, update)
     
