@@ -30,7 +30,7 @@ class _BotCommands:
         self.WatchCommand = getCommand('WATCH_COMMAND', 'watch')
         self.TarWatchCommand = getCommand('TARWATCH_COMMAND', 'tarwatch')
         self.deleteCommand = getCommand('DELETE_COMMAND', 'del')
-        self.TsHelpCommand = getCommand('TS_HELP_COMMAND', 'tshelp')
+        self.TsHelpCommand = getCommand('TSHELP_COMMAND', 'tshelp')
 
 
 BotCommands = _BotCommands()
